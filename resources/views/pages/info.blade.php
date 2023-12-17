@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 class="text-bg-success text-center">HELLO WORLD!!!!!</h1>
+        <h1 class="text-center text-bg-primary">INFORMATION</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -21,20 +21,29 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="{{route('founder')}}">FOUNDER</a>
+                            <a class="nav-link active" aria-current="page" href="{{route('home')}}">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="{{route('info')}}">INFO</a>
+                            <a class="nav-link active" href="{{route('founder')}}">FOUNDER</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <h2 class="text-center">Welcome to Laravel</h2>
+    <main>
+        <h2 class="text-center">Laravel is an open source framework, so anyone can look, analyze and contribute
+            (obviously subject to confirmation by an owner) to the code.</h2>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-light">TYPE: {{ $type }}</li>
+            <li class="list-group-item list-group-item-light">USED FOR: {{ $use }}</li>
+            <li class="list-group-item list-group-item-light">LICENSE: {{ $license }}</li>
+            <li class="list-group-item list-group-item-light">COMING FROM: {{ $framework }}</li>
+        </ul>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

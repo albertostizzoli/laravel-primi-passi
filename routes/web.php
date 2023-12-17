@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
+Route::get('/founder', function () {
+    $data = [
+        'name'=> 'Taylor',
+        'surname' => 'Otwell',
+    ];
+    return view('pages.founder', $data);
+})->name('founder');
+
+Route::get('/info', function () {
+    $info = [
+        'type'=> 'MVC',
+        'use' => 'development for web applications',
+        'license' => 'MIT',
+        'framework'=> 'Symfony',
+    ];
+    return view('pages.info', $info);
+})->name('info');

@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 class="text-bg-success text-center">HELLO WORLD!!!!!</h1>
+        <h1 class="text-center text-bg-danger">HELLO DEVELOPERS</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="{{route('founder')}}">FOUNDER</a>
+                            <a class="nav-link active" aria-current="page" href="{{route('home')}}">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="{{route('info')}}">INFO</a>
@@ -31,7 +31,7 @@
             </div>
         </nav>
     </header>
-    <h2 class="text-center">Welcome to Laravel</h2>
+    <h2 class="text-center">My name is {{ $name. ' ' .$surname }} and I'm the founder and creator of Laravel</h2>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
